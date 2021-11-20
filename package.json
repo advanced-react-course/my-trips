@@ -1,0 +1,73 @@
+{
+  "name": "my-trips",
+  "version": "1.2.1",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:prod": "NODE_ENV=production next build",
+    "start": "next start",
+    "lint": "eslint ./src/ --max-warnings=0",
+    "lint:fix": "npm run lint -- --cache --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "generate": "plop --plopfile ./.plop/plopfile.js",
+    "prepare": "is-ci || husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/advanced-react-course/my-trips.git"
+  },
+  "keywords": [],
+  "author": "Magno Biét <magno.biet@gmail.com> (https://magnobiet.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/advanced-react-course/my-trips/issues"
+  },
+  "homepage": "https://github.com/advanced-react-course/my-trips#readme",
+  "dependencies": {
+    "@styled-icons/evaicons-outline": "^10.34.0",
+    "leaflet": "^1.7.1",
+    "next": "12.0.4",
+    "next-pwa": "^5.4.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-typescript": "^7.16.0",
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
+    "@next/eslint-plugin-next": "^12.0.4",
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^12.1.2",
+    "@types/jest": "^27.0.3",
+    "@types/leaflet": "^1.7.6",
+    "@types/node": "^16.11.9",
+    "@types/react": "^17.0.35",
+    "@types/styled-components": "^5.1.15",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "babel-loader": "^8.2.3",
+    "babel-plugin-styled-components": "^1.13.3",
+    "eslint": "^8.3.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "fork-ts-checker-webpack-plugin": "^6.4.0",
+    "husky": "^7.0.4",
+    "is-ci": "^3.0.1",
+    "jest": "^27.3.1",
+    "jest-styled-components": "^7.0.6",
+    "lint-staged": "^12.0.3",
+    "plop": "^2.7.6",
+    "prettier": "^2.4.1",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.2",
+    "typescript-plugin-styled-components": "^2.0.0",
+    "webpack": "^5.64.2"
+  }
+}
