@@ -4096,7 +4096,16 @@ export type GetPageBySlugQueryVariables = Exact<{
 
 export type GetPageBySlugQuery = { __typename?: 'Query', pages: Array<{ __typename?: 'About', id: string, slug: string, heading?: string | null | undefined, body: { __typename?: 'RichText', html: string } }> };
 
-export type GetPlacesQueryVariables = Exact<{ [key: string]: never; }>;
+export type GetPlacesQueryVariables = Exact<{
+  first?: InputMaybe<Scalars['Int']>;
+}>;
 
 
 export type GetPlacesQuery = { __typename?: 'Query', places: Array<{ __typename?: 'Place', id: string, slug: string, name: string, description?: { __typename?: 'RichText', html: string } | null | undefined, location: { __typename?: 'Location', latitude: number, longitude: number }, gallery: Array<{ __typename?: 'Asset', url: string, width?: number | null | undefined, height?: number | null | undefined }> }> };
+
+export type GetPlaceBySlugQueryVariables = Exact<{
+  slug: Scalars['String'];
+}>;
+
+
+export type GetPlaceBySlugQuery = { __typename?: 'Query', place?: { __typename?: 'Place', id: string, slug: string, name: string, description?: { __typename?: 'RichText', html: string } | null | undefined, location: { __typename?: 'Location', latitude: number, longitude: number }, gallery: Array<{ __typename?: 'Asset', url: string, width?: number | null | undefined, height?: number | null | undefined }> } | null | undefined };

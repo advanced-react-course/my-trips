@@ -10,4 +10,7 @@ module.exports = withPWA({
     dest: 'public',
     disable: !isProduction,
   },
+  images: {
+    domains: ['media.graphcms.com'],
+  },
 });
