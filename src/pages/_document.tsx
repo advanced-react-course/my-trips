@@ -1,5 +1,12 @@
 // prettier-ignore
-import Document, { DocumentContext, Head, Html, Main, NextScript } from 'next/document';
+import Analytics from 'components/Analytics';
+import Document, {
+  DocumentContext,
+  Head,
+  Html,
+  Main,
+  NextScript
+} from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
 export default class MyDocument extends Document {
@@ -36,6 +43,7 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <Analytics />
         </body>
       </Html>
     );
