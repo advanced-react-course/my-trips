@@ -15,7 +15,7 @@ export default function HomeTemplate({ places }: MapProps) {
       <NextSeo
         title="My Trips"
         description="A simple project to show my favorite spots in the world"
-        canonical="https://my-trips.magnobiet.com"
+        canonical={`${process.env.NEXT_PUBLIC_BASE_URL}`}
       />
       <LinkWrapper href="/about">
         <InfoOutline size={32} aria-label="About" />

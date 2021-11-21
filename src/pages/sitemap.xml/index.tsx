@@ -9,17 +9,17 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const { places } = await client.request<GetPlacesQuery>(GET_PLACES);
 
   const fields = places.map(({ slug }) => ({
-    loc: `https://my-trips.magnobiet.com/${slug}`,
+    loc: `${process.env.BASE_URL}${slug}`,
     lastmod: new Date().toISOString(),
   }));
 
   fields.unshift({
-    loc: `https://my-trips.magnobiet.com/about`,
+    loc: `${process.env.BASE_URL}about`,
     lastmod: new Date().toISOString(),
   });
 
   fields.unshift({
-    loc: `https://my-trips.magnobiet.com/`,
+    loc: `${process.env.BASE_URL}`,
     lastmod: new Date().toISOString(),
   });
 

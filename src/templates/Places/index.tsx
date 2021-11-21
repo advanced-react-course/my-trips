@@ -35,7 +35,7 @@ export default function PlaceTemplate({ place }: PlaceTemplateProps) {
       <NextSeo
         title={`${place.name} - My Trips`}
         description={place.description?.text}
-        canonical="https://my-trips.magnobiet.com"
+        canonical={`${process.env.NEXT_PUBLIC_BASE_URL}`}
       />
 
       <LinkWrapper href="/">
