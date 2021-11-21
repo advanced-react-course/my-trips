@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/node,yarn,react,macos,linux,dotenv,windows,storybookjs
-# Edit at https://www.toptal.com/developers/gitignore?templates=node,yarn,react,macos,linux,dotenv,windows,storybookjs
+# Created by https://www.toptal.com/developers/gitignore/api/node,yarn,react,linux,macos,dotenv,windows,storybookjs
+# Edit at https://www.toptal.com/developers/gitignore?templates=node,yarn,react,linux,macos,dotenv,windows,storybookjs
 
 ### dotenv ###
 .env
@@ -171,6 +171,12 @@ dist
 # Serverless Webpack directories
 .webpack/
 
+# Optional stylelint cache
+.stylelintcache
+
+# SvelteKit build / generate output
+.svelte-kit
+
 ### react ###
 .DS_*
 **/*.backup.*
@@ -232,9 +238,10 @@ $RECYCLE.BIN/
 # and uncomment the following lines
 # .pnp.*
 
-# End of https://www.toptal.com/developers/gitignore/api/node,yarn,react,macos,linux,dotenv,windows,storybookjs
+# End of https://www.toptal.com/developers/gitignore/api/node,yarn,react,linux,macos,dotenv,windows,storybookjs
 
 /out/
 /build
 public/sw.js
 public/workbox-*.js
+.env.*

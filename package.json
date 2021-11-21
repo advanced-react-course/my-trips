@@ -13,7 +13,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "generate": "plop --plopfile ./.plop/plopfile.js",
-    "prepare": "is-ci || husky install"
+    "prepare": "is-ci || husky install",
+    "codegen": "graphql-codegen --config codegen.yml"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,8 @@
   "homepage": "https://github.com/advanced-react-course/my-trips#readme",
   "dependencies": {
     "@styled-icons/evaicons-outline": "^10.34.0",
+    "graphql": "^16.0.1",
+    "graphql-request": "^3.6.1",
     "leaflet": "^1.7.1",
     "next": "12.0.4",
     "next-pwa": "^5.4.0",
@@ -41,6 +44,10 @@
     "@babel/preset-typescript": "^7.16.0",
     "@commitlint/cli": "^15.0.0",
     "@commitlint/config-conventional": "^15.0.0",
+    "@graphql-codegen/add": "^3.1.0",
+    "@graphql-codegen/cli": "2.3.0",
+    "@graphql-codegen/typescript": "2.4.1",
+    "@graphql-codegen/typescript-operations": "2.2.1",
     "@next/eslint-plugin-next": "^12.0.4",
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^12.1.2",
