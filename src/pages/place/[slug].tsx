@@ -38,6 +38,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   }
 
   return {
+    revalidate: Number(process.env.REVALIDATE_TIME),
     props: { place },
   };
 };

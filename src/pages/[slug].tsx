@@ -39,6 +39,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { heading, body } = pages[0];
 
   return {
+    revalidate: Number(process.env.REVALIDATE_TIME),
     props: {
       heading,
       body: body?.html,
